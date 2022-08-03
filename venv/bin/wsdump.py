@@ -1,4 +1,4 @@
-#!/home/martourez/Desktop/SEDevOps_program/translation_project/flask-translation-project/venv/bin/python3
+#!/home/martourez/Desktop/SEDevOps_program/translation_project/flask_translation_app-watson/venv/bin/python3
 
 import argparse
 import code

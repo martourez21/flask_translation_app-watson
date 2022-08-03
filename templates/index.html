@@ -17,24 +17,28 @@
     <span class="flex-grow-1">SERVER STATS</span>
     <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
     </div>
-        <select class="form-select form-select-lg">
+    <form class="input-group" method="GET">
+        <select class="form-select form-select-lg" name="en-fr">
             <option>Select Language</option>
-            <option name="en">English</option>
-            <option name="fr">French</option>
-
+            <option value="en">English</option>
+            <option value="fr">French</option>
           </select>
         <span class="input-group-text">to</span>
-        <select class="form-select form-select-lg">
+        <select class="form-select form-select-lg" name="mode_id2">
             <option>Select Language</option>
           </select>
+    </div>
+
       <div class="row">
         <div class="col-xl-6">
-        <textarea class="form-control" rows="10" style="margin-top:5px ;"></textarea>
+        <textarea class="form-control" rows="10" name="textToTranslate" style="margin-top:8px ;">{{text}}</textarea>
         </div>
         <div class="col-xl-6">
-        <textarea class="form-control" rows="10" style="margin-top:5px ;"></textarea>
+        <textarea class="form-control" name="translatedText"  rows="10" style="margin-top:5px ;"></textarea>
         </div>
       </div>
+    </form>
+
 
     <div class="card-arrow">
     <div class="card-arrow-top-left"></div>

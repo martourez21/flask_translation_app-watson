@@ -44,10 +44,10 @@ def french_to_english(french_text):
 
     return data['translation']
 
-english_to_french("""Hello! my name is Nestor Martourez,
+'''english_to_french("""Hello! my name is Nestor Martourez,
 a full stack application developer. This is the begining 
 of my cloud journey...""")
 
 french_to_english("""Bonjour, mon nom est Nestor Martourez,
 développeur complet d'applications de pile.
-C'est le début de mon voyage en nuage ...""")
+C'est le début de mon voyage en nuage ...""")'''
