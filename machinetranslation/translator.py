@@ -18,20 +18,20 @@ lt = LanguageTranslatorV3(version='2022-07-08', authenticator=authenticator)
 #assign your api url to the object
 lt.set_service_url(url)
 
-def english_to_french(english_text):
+def english_to_french(model, english_text):
     """
     This function translates string inputs from english to french
     """
     translation = lt.translate(
     english_text,
-    model_id='en-fr').get_result()
+    model_id=model).get_result()
     data = {}
     for data in translation['translations']:
         print(data['translation'])
 
     return data['translation']
 
-def french_to_english(french_text):
+def french_to_english(model, french_text):
     """
     This function translates input string from french back to english
     """
