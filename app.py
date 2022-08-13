@@ -41,7 +41,7 @@ def translation():
         return render_template('index.html', text=text)
     except:
 
-        return render_template('404-page.html');
+        return render_template('404-page.html')
 
 
 if __name__ == "__main__":
