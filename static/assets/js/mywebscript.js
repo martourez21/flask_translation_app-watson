@@ -1,4 +1,4 @@
-let translateToFrench = ()=>{
+let translate = ()=>{
     textToTranslate = document.getElementById("textToTranslate").value;
 
     let xhttp = new XMLHttpRequest();
@@ -7,7 +7,7 @@ let translateToFrench = ()=>{
             document.getElementById("textToTranslate").innerHTML = xhttp.responseText;
         }
     };
-    xhttp.open("GET", "englishToFrench?textToTranslate"+"="+textToTranslate, true);
+    xhttp.open("GET", "translation?textToTranslate"+"="+textToTranslate, true);
     xhttp.send();
 }
 

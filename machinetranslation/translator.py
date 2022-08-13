@@ -2,6 +2,7 @@
 This module uses the ibm-watson api to render translations
 """
 import os
+from ibm_watson import TextToSpeechV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import LanguageTranslatorV3
 from dotenv import load_dotenv
